@@ -1,11 +1,20 @@
 <?php
 
-    return [
+namespace humhub\modules\webshell;
+
+return [
     'id' => 'webshell',
     'class' => 'humhub\modules\webshell\Module',
     'namespace' => 'humhub\modules\webshell',
     'events' => [
-        ['class' => 'AdminMenuWidget', 'event' => 'onInit', 'callback' => ['WebShellModule', 'onAdminMenuInit']],
-        ['class' => 'WebApplication', 'event' => 'onInit', 'callback' => ['WebShellModule', 'onWebApplicationInit']],
-    ],
+        [
+            'class' => \humhub\modules\admin\widgets\AdminMenu::className(),
+            'event' => \humhub\modules\admin\widgets\AdminMenu::EVENT_INIT,
+            'callback' => [
+                'humhub\modules\webshell\Events',
+                'onAdminMenuInit'
+            ]
+        ]
+    ]
 ];
+?>
