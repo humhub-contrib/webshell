@@ -7,12 +7,16 @@ use yii\web\AssetBundle;
 class Assets extends AssetBundle
 {
 
-    public $css = [
-        'webshell.css',
+    public $js = [
+        'js/jquery.terminal-min.js',
     ];
 
-    public $js = [
-        'webshell.js',
+    public $css = [
+        'css/jquery.terminal.css',
+    ];
+
+    public $depends = [
+        'yii\web\JqueryAsset',
     ];
 
     public function init()
