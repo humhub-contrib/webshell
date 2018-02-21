@@ -13,7 +13,7 @@ class Events extends \yii\base\Object
             'label' => Yii::t('WebShellModule.base', 'WebShell'),
             'url' => Url::to(['/webshell/default']),
             'icon' => '<i class="fa fa-align-left"></i>',
-            'group' => 'manage',
+            'group' => 'settings',
             'sortOrder' => 90000,
             'isActive' => (Yii::$app->controller->module && Yii::$app->controller->module->id == 'webshell')
         ]);
