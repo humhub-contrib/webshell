@@ -23,7 +23,7 @@ class Module extends \humhub\components\Module
     /**
      * @var array URL to use for `quit` command. If not set, `quit` command will do nothing.
      */
-    public $quitUrl;
+    public $quitUrl = ['/dashboard'];
 
     /**
      * @var string path to `yii` script
