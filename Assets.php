@@ -12,7 +12,7 @@ class Assets extends AssetBundle
     ];
 
     public $css = [
-        'css/jquery.terminal.css',
+        'css/jquery.terminal.min.css',
     ];
 
     public $depends = [
