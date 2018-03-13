@@ -9,7 +9,6 @@ use yii\web\Response;
 
 class Module extends \humhub\components\Module
 {
-
     /**
      * @inheritdoc
      */
@@ -18,7 +17,7 @@ class Module extends \humhub\components\Module
     /**
      * @var string console greetings
      */
-    public $greetings = 'Yii 2.0 web shell';
+    public $greetings = 'Yii 2.0 Webshell';
 
     /**
      * @var array URL to use for `quit` command. If not set, `quit` command will do nothing.
