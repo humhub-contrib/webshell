@@ -7,21 +7,17 @@ use yii\web\AssetBundle;
 class Assets extends AssetBundle
 {
 
+    public $sourcePath = '@humhub/modules/webshell/assets';
+
+    public $css = [
+        'css/webshell.css',
+    ];
+
     public $js = [
         'js/jquery.terminal-min.js',
     ];
 
-    public $css = [
-        'css/jquery.terminal.min.css',
-    ];
-
     public $depends = [
-        'yii\web\JqueryAsset',
+        'humhub\modules\webshell\JqueryTerminalAsset',
     ];
-
-    public function init()
-    {
-        $this->sourcePath = dirname(__FILE__) . '/assets';
-        parent::init();
-    }
 }
