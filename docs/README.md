@@ -1,3 +1,5 @@
 # HumHub WebShell Module Docs
 
-### ```TBA```
+### Docs Index
+- [Access Control](config/access-control.md)
+- [Configuration](config/configuration.md)
