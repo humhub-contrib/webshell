@@ -1,10 +1,12 @@
 <?php
 
-/** @var $this yii\web\View */
+/** @var $this humhub\components\View */
 /** @var $content string */
 
 use yii\helpers\Html;
+
 ?>
+
 <?php $this->beginPage() ?>
 <!doctype html>
 <html lang="<?= Yii::$app->language ?>">
