@@ -5,7 +5,7 @@ namespace humhub\modules\webshell;
 use Yii;
 use yii\base\Action;
 use yii\web\ForbiddenHttpException;
-use yii\web\Response;
+use humhub\components\Response;
 
 class Module extends \humhub\components\Module
 {
@@ -27,7 +27,15 @@ class Module extends \humhub\components\Module
     /**
      * @var string path to `yii` script
      */
-    public $yiiScript = '@app/yii';
+    public $yiiScript = '@protected\yii';
+
+    /**
+     * @var string path to the yii console app configuration file
+     * used to run the yii command in the same process as the web application's
+     * if so chosen.
+     */
+    public $consoleConfig = '@protected/humhub/config/console.php';
+
     /**
      * @var array the list of IPs that are allowed to access this module.
      * Each array element represents a single IP filter which can be either an IP address
