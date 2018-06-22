@@ -17,4 +17,9 @@ return [
 ```
 
 With the above configuration, you will be able to access web shell in your browser using
-the URL `http://localhost/path/to/index.php?r=webshell`
+one of the following URLs
+
+#### PrettyUrl Disabled
+`http://localhost/path/to/index.php?r=webshell`
+#### PrettyUrl Enabled
+`http://localhost/path/to/webshell`
