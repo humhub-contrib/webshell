@@ -5,7 +5,7 @@ namespace humhub\modules\webshell;
 use Yii;
 use yii\helpers\Url;
 
-class Events extends \yii\base\Object
+class Events extends \yii\base\BaseObject
 {
     public static function onAdminMenuInit($event)
     {
